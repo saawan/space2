@@ -1,7 +1,7 @@
 [
   {
     "appTemplate" : "webapp",
-    "description" : "User Management 2",
+    "description" : "User Management",
     "displayName" : "User Management",
     "htmlHeadTitle" : "User Management",
     "keywords" : "Authentication, Trillo, User Management",
