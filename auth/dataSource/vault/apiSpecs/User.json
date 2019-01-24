@@ -1,0 +1,360 @@
+[
+  {
+    "serviceUrl" : "/ds/delete/auth/vault/User",
+    "method" : "delete",
+    "querySchema" : {
+      "properties" : {
+        "permanent" : {
+          "required" : true,
+          "type" : "string"
+        },
+        "id" : {
+          "required" : true,
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    }
+  },
+  {
+    "serviceUrl" : "/ds/deleteAll/auth/vault/User",
+    "bodySchema" : {
+      "array" : true,
+      "type" : "string"
+    },
+    "method" : "delete",
+    "querySchema" : {
+      "properties" : {
+        "permanent" : {
+          "required" : true,
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    }
+  },
+  {
+    "serviceUrl" : "/ds/deleteByQuery/auth/vault/User",
+    "method" : "delete",
+    "querySchema" : {
+      "properties" : {
+        "permanent" : {
+          "required" : true,
+          "type" : "string"
+        },
+        "query" : {
+          "required" : true,
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    }
+  },
+  {
+    "serviceUrl" : "/ds/object/auth/vault/User",
+    "method" : "get",
+    "querySchema" : {
+      "properties" : {
+        "id" : {
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    }
+  },
+  {
+    "serviceUrl" : "/ds/objects/auth/vault/User",
+    "bodySchema" : {
+      "array" : true,
+      "type" : "string"
+    },
+    "method" : "post"
+  },
+  {
+    "serviceUrl" : "/ds/objectsbyquery/auth/vault/User",
+    "method" : "get",
+    "querySchema" : {
+      "properties" : {
+        "query" : {
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    }
+  },
+  {
+    "serviceUrl" : "/ds/page/auth/vault/User",
+    "bodySchema" : {
+      "properties" : {
+        "having" : {
+          "type" : "string"
+        },
+        "size" : {
+          "type" : "integer"
+        },
+        "start" : {
+          "type" : "integer"
+        },
+        "orderBy" : {
+          "type" : "string"
+        },
+        "where" : {
+          "type" : "string"
+        },
+        "groupBy" : {
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    },
+    "method" : "post",
+    "outputSchema" : {
+      "properties" : {
+        "items" : {
+          "array" : true,
+          "type" : "object"
+        },
+        "totalItems" : {
+          "type" : "number"
+        },
+        "start" : {
+          "type" : "number"
+        },
+        "_paginated_" : {
+          "type" : "boolean"
+        }
+      },
+      "type" : "object"
+    },
+    "testBody" : {
+      "size" : 1,
+      "start" : 1
+    }
+  },
+  {
+    "serviceUrl" : "/ds/save/auth/vault/User",
+    "bodySchema" : {
+      "properties" : {
+        "lastName" : {
+          "type" : "string"
+        },
+        "role" : {
+          "type" : "string"
+        },
+        "lastPage" : {
+          "type" : "string"
+        },
+        "pictureUrl" : {
+          "type" : "string"
+        },
+        "roles" : {
+          "type" : "string"
+        },
+        "originalRole" : {
+          "type" : "string"
+        },
+        "externalId" : {
+          "type" : "string"
+        },
+        "groups" : {
+          "type" : "string"
+        },
+        "history" : {
+          "type" : "string"
+        },
+        "userId" : {
+          "type" : "string"
+        },
+        "emailVerified" : {
+          "type" : "boolean"
+        },
+        "firstName" : {
+          "type" : "string"
+        },
+        "verifyLinkSentAt" : {
+          "type" : "biginteger"
+        },
+        "password" : {
+          "type" : "string"
+        },
+        "emailVerifyKey" : {
+          "type" : "string"
+        },
+        "extern_source" : {
+          "type" : "string"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "tenantId" : {
+          "type" : "string"
+        },
+        "appKey" : {
+          "type" : "string"
+        },
+        "email" : {
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    },
+    "method" : "post"
+  },
+  {
+    "serviceUrl" : "/ds/saveAll/auth/vault/User",
+    "bodySchema" : {
+      "array" : true,
+      "properties" : {
+        "lastName" : {
+          "type" : "string"
+        },
+        "role" : {
+          "type" : "string"
+        },
+        "lastPage" : {
+          "type" : "string"
+        },
+        "pictureUrl" : {
+          "type" : "string"
+        },
+        "roles" : {
+          "type" : "string"
+        },
+        "originalRole" : {
+          "type" : "string"
+        },
+        "externalId" : {
+          "type" : "string"
+        },
+        "groups" : {
+          "type" : "string"
+        },
+        "history" : {
+          "type" : "string"
+        },
+        "userId" : {
+          "type" : "string"
+        },
+        "emailVerified" : {
+          "type" : "boolean"
+        },
+        "firstName" : {
+          "type" : "string"
+        },
+        "verifyLinkSentAt" : {
+          "type" : "biginteger"
+        },
+        "password" : {
+          "type" : "string"
+        },
+        "emailVerifyKey" : {
+          "type" : "string"
+        },
+        "extern_source" : {
+          "type" : "string"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "tenantId" : {
+          "type" : "string"
+        },
+        "appKey" : {
+          "type" : "string"
+        },
+        "email" : {
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    },
+    "method" : "post"
+  },
+  {
+    "serviceUrl" : "/ds/update/auth/vault/User",
+    "bodySchema" : {
+      "properties" : {
+        "lastName" : {
+          "type" : "string"
+        },
+        "role" : {
+          "type" : "string"
+        },
+        "lastPage" : {
+          "type" : "string"
+        },
+        "pictureUrl" : {
+          "type" : "string"
+        },
+        "roles" : {
+          "type" : "string"
+        },
+        "originalRole" : {
+          "type" : "string"
+        },
+        "externalId" : {
+          "type" : "string"
+        },
+        "groups" : {
+          "type" : "string"
+        },
+        "history" : {
+          "type" : "string"
+        },
+        "userId" : {
+          "type" : "string"
+        },
+        "emailVerified" : {
+          "type" : "boolean"
+        },
+        "firstName" : {
+          "type" : "string"
+        },
+        "verifyLinkSentAt" : {
+          "type" : "biginteger"
+        },
+        "password" : {
+          "type" : "string"
+        },
+        "emailVerifyKey" : {
+          "type" : "string"
+        },
+        "extern_source" : {
+          "type" : "string"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "tenantId" : {
+          "type" : "string"
+        },
+        "appKey" : {
+          "type" : "string"
+        },
+        "email" : {
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    },
+    "method" : "post"
+  },
+  {
+    "serviceUrl" : "/ds/sqltemplate/auth/vault/User",
+    "bodySchema" : {
+      "properties" : {
+        "sqlTemplate" : {
+          "type" : "string"
+        },
+        "size" : {
+          "type" : "integer"
+        },
+        "start" : {
+          "type" : "integer"
+        }
+      },
+      "type" : "object"
+    },
+    "method" : "post"
+  }
+]
